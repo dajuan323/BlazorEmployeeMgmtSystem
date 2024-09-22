@@ -1,0 +1,11 @@
+M:\projects\portfolio\BlazorEmployeeMgmtSystem\ClientLibrary\bin\Debug\net8.0\ClientLibrary.deps.json
+M:\projects\portfolio\BlazorEmployeeMgmtSystem\ClientLibrary\bin\Debug\net8.0\ClientLibrary.dll
+M:\projects\portfolio\BlazorEmployeeMgmtSystem\ClientLibrary\bin\Debug\net8.0\ClientLibrary.pdb
+M:\projects\portfolio\BlazorEmployeeMgmtSystem\ClientLibrary\obj\Debug\net8.0\ClientLibrary.GeneratedMSBuildEditorConfig.editorconfig
+M:\projects\portfolio\BlazorEmployeeMgmtSystem\ClientLibrary\obj\Debug\net8.0\ClientLibrary.AssemblyInfoInputs.cache
+M:\projects\portfolio\BlazorEmployeeMgmtSystem\ClientLibrary\obj\Debug\net8.0\ClientLibrary.AssemblyInfo.cs
+M:\projects\portfolio\BlazorEmployeeMgmtSystem\ClientLibrary\obj\Debug\net8.0\ClientLibrary.csproj.CoreCompileInputs.cache
+M:\projects\portfolio\BlazorEmployeeMgmtSystem\ClientLibrary\obj\Debug\net8.0\ClientLibrary.dll
+M:\projects\portfolio\BlazorEmployeeMgmtSystem\ClientLibrary\obj\Debug\net8.0\refint\ClientLibrary.dll
+M:\projects\portfolio\BlazorEmployeeMgmtSystem\ClientLibrary\obj\Debug\net8.0\ClientLibrary.pdb
+M:\projects\portfolio\BlazorEmployeeMgmtSystem\ClientLibrary\obj\Debug\net8.0\ref\ClientLibrary.dll

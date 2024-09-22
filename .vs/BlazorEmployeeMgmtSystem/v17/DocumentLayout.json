@@ -1,0 +1,138 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C7F95478-9DB9-4332-9941-CE1441209A47}|ClientLibrary\\ClientLibrary.csproj|m:\\projects\\portfolio\\blazoremployeemgmtsystem\\clientlibrary\\helpers\\localstorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7F95478-9DB9-4332-9941-CE1441209A47}|ClientLibrary\\ClientLibrary.csproj|solutionrelative:clientlibrary\\helpers\\localstorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7F95478-9DB9-4332-9941-CE1441209A47}|ClientLibrary\\ClientLibrary.csproj|m:\\projects\\portfolio\\blazoremployeemgmtsystem\\clientlibrary\\helpers\\serializations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7F95478-9DB9-4332-9941-CE1441209A47}|ClientLibrary\\ClientLibrary.csproj|solutionrelative:clientlibrary\\helpers\\serializations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B8AEB86-3920-402F-BB06-AF911473DB62}|BaseLibrary\\BaseLibrary.csproj|m:\\projects\\portfolio\\blazoremployeemgmtsystem\\baselibrary\\dto\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B8AEB86-3920-402F-BB06-AF911473DB62}|BaseLibrary\\BaseLibrary.csproj|solutionrelative:baselibrary\\dto\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7F95478-9DB9-4332-9941-CE1441209A47}|ClientLibrary\\ClientLibrary.csproj|m:\\projects\\portfolio\\blazoremployeemgmtsystem\\clientlibrary\\services\\implementations\\useraccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7F95478-9DB9-4332-9941-CE1441209A47}|ClientLibrary\\ClientLibrary.csproj|solutionrelative:clientlibrary\\services\\implementations\\useraccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7F95478-9DB9-4332-9941-CE1441209A47}|ClientLibrary\\ClientLibrary.csproj|m:\\projects\\portfolio\\blazoremployeemgmtsystem\\clientlibrary\\services\\contracts\\iuseraccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7F95478-9DB9-4332-9941-CE1441209A47}|ClientLibrary\\ClientLibrary.csproj|solutionrelative:clientlibrary\\services\\contracts\\iuseraccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7F95478-9DB9-4332-9941-CE1441209A47}|ClientLibrary\\ClientLibrary.csproj|m:\\projects\\portfolio\\blazoremployeemgmtsystem\\clientlibrary\\clientlibrary.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C7F95478-9DB9-4332-9941-CE1441209A47}|ClientLibrary\\ClientLibrary.csproj|solutionrelative:clientlibrary\\clientlibrary.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LocalStorageService.cs",
+              "DocumentMoniker": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\ClientLibrary\\Helpers\\LocalStorageService.cs",
+              "RelativeDocumentMoniker": "ClientLibrary\\Helpers\\LocalStorageService.cs",
+              "ToolTip": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\ClientLibrary\\Helpers\\LocalStorageService.cs",
+              "RelativeToolTip": "ClientLibrary\\Helpers\\LocalStorageService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T04:37:46.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Serializations.cs",
+              "DocumentMoniker": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\ClientLibrary\\Helpers\\Serializations.cs",
+              "RelativeDocumentMoniker": "ClientLibrary\\Helpers\\Serializations.cs",
+              "ToolTip": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\ClientLibrary\\Helpers\\Serializations.cs",
+              "RelativeToolTip": "ClientLibrary\\Helpers\\Serializations.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T04:24:01.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserSession.cs",
+              "DocumentMoniker": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\BaseLibrary\\DTO\\UserSession.cs",
+              "RelativeDocumentMoniker": "BaseLibrary\\DTO\\UserSession.cs",
+              "ToolTip": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\BaseLibrary\\DTO\\UserSession.cs",
+              "RelativeToolTip": "BaseLibrary\\DTO\\UserSession.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T04:20:37.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserAccountService.cs",
+              "DocumentMoniker": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\ClientLibrary\\Services\\Implementations\\UserAccountService.cs",
+              "RelativeDocumentMoniker": "ClientLibrary\\Services\\Implementations\\UserAccountService.cs",
+              "ToolTip": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\ClientLibrary\\Services\\Implementations\\UserAccountService.cs",
+              "RelativeToolTip": "ClientLibrary\\Services\\Implementations\\UserAccountService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T01:41:14.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IUserAccountService.cs",
+              "DocumentMoniker": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\ClientLibrary\\Services\\Contracts\\IUserAccountService.cs",
+              "RelativeDocumentMoniker": "ClientLibrary\\Services\\Contracts\\IUserAccountService.cs",
+              "ToolTip": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\ClientLibrary\\Services\\Contracts\\IUserAccountService.cs",
+              "RelativeToolTip": "ClientLibrary\\Services\\Contracts\\IUserAccountService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T01:32:02.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ClientLibrary",
+              "DocumentMoniker": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\ClientLibrary\\ClientLibrary.csproj",
+              "RelativeDocumentMoniker": "ClientLibrary\\ClientLibrary.csproj",
+              "ToolTip": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\ClientLibrary\\ClientLibrary.csproj",
+              "RelativeToolTip": "ClientLibrary\\ClientLibrary.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-21T23:18:56.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

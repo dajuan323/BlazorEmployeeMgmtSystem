@@ -1,0 +1,17 @@
+M:\projects\portfolio\BlazorEmployeeMgmtSystem\ServerLibrary\bin\Debug\net8.0\ServerLibrary.deps.json
+M:\projects\portfolio\BlazorEmployeeMgmtSystem\ServerLibrary\bin\Debug\net8.0\ServerLibrary.dll
+M:\projects\portfolio\BlazorEmployeeMgmtSystem\ServerLibrary\bin\Debug\net8.0\ServerLibrary.pdb
+M:\projects\portfolio\BlazorEmployeeMgmtSystem\ServerLibrary\obj\Debug\net8.0\ServerLibrary.GeneratedMSBuildEditorConfig.editorconfig
+M:\projects\portfolio\BlazorEmployeeMgmtSystem\ServerLibrary\obj\Debug\net8.0\ServerLibrary.AssemblyInfoInputs.cache
+M:\projects\portfolio\BlazorEmployeeMgmtSystem\ServerLibrary\obj\Debug\net8.0\ServerLibrary.AssemblyInfo.cs
+M:\projects\portfolio\BlazorEmployeeMgmtSystem\ServerLibrary\obj\Debug\net8.0\ServerLibrary.csproj.CoreCompileInputs.cache
+M:\projects\portfolio\BlazorEmployeeMgmtSystem\ServerLibrary\obj\Debug\net8.0\ServerLibrary.dll
+M:\projects\portfolio\BlazorEmployeeMgmtSystem\ServerLibrary\obj\Debug\net8.0\refint\ServerLibrary.dll
+M:\projects\portfolio\BlazorEmployeeMgmtSystem\ServerLibrary\obj\Debug\net8.0\ServerLibrary.pdb
+M:\projects\portfolio\BlazorEmployeeMgmtSystem\ServerLibrary\obj\Debug\net8.0\ref\ServerLibrary.dll
+M:\projects\portfolio\BlazorEmployeeMgmtSystem\ServerLibrary\bin\Debug\net8.0\ServerLibrary.runtimeconfig.json
+M:\projects\portfolio\BlazorEmployeeMgmtSystem\ServerLibrary\bin\Debug\net8.0\BaseLibrary.dll
+M:\projects\portfolio\BlazorEmployeeMgmtSystem\ServerLibrary\bin\Debug\net8.0\BaseLibrary.pdb
+M:\projects\portfolio\BlazorEmployeeMgmtSystem\ServerLibrary\obj\Debug\net8.0\ServerLibrary.csproj.AssemblyReference.cache
+M:\projects\portfolio\BlazorEmployeeMgmtSystem\ServerLibrary\obj\Debug\net8.0\ServerLi.AF94C59E.Up2Date
+M:\projects\portfolio\BlazorEmployeeMgmtSystem\ServerLibrary\obj\Debug\net8.0\ServerLibrary.genruntimeconfig.cache
