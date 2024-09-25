@@ -1,12 +1,13 @@
 M:\projects\portfolio\BlazorEmployeeMgmtSystem\BaseLibrary\bin\Debug\net8.0\BaseLibrary.deps.json
 M:\projects\portfolio\BlazorEmployeeMgmtSystem\BaseLibrary\bin\Debug\net8.0\BaseLibrary.dll
 M:\projects\portfolio\BlazorEmployeeMgmtSystem\BaseLibrary\bin\Debug\net8.0\BaseLibrary.pdb
+M:\projects\portfolio\BlazorEmployeeMgmtSystem\BaseLibrary\obj\Debug\net8.0\BaseLibrary.csproj.AssemblyReference.cache
 M:\projects\portfolio\BlazorEmployeeMgmtSystem\BaseLibrary\obj\Debug\net8.0\BaseLibrary.GeneratedMSBuildEditorConfig.editorconfig
 M:\projects\portfolio\BlazorEmployeeMgmtSystem\BaseLibrary\obj\Debug\net8.0\BaseLibrary.AssemblyInfoInputs.cache
 M:\projects\portfolio\BlazorEmployeeMgmtSystem\BaseLibrary\obj\Debug\net8.0\BaseLibrary.AssemblyInfo.cs
 M:\projects\portfolio\BlazorEmployeeMgmtSystem\BaseLibrary\obj\Debug\net8.0\BaseLibrary.csproj.CoreCompileInputs.cache
+M:\projects\portfolio\BlazorEmployeeMgmtSystem\BaseLibrary\obj\Debug\net8.0\BaseLibrary.sourcelink.json
 M:\projects\portfolio\BlazorEmployeeMgmtSystem\BaseLibrary\obj\Debug\net8.0\BaseLibrary.dll
 M:\projects\portfolio\BlazorEmployeeMgmtSystem\BaseLibrary\obj\Debug\net8.0\refint\BaseLibrary.dll
 M:\projects\portfolio\BlazorEmployeeMgmtSystem\BaseLibrary\obj\Debug\net8.0\BaseLibrary.pdb
 M:\projects\portfolio\BlazorEmployeeMgmtSystem\BaseLibrary\obj\Debug\net8.0\ref\BaseLibrary.dll
-M:\projects\portfolio\BlazorEmployeeMgmtSystem\BaseLibrary\obj\Debug\net8.0\BaseLibrary.csproj.AssemblyReference.cache

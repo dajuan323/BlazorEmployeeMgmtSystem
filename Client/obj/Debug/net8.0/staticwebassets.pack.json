@@ -5,7 +5,7 @@
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
     {
-      "Id": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\Client\\obj\\Debug\\net8.0\\compressed\\jqzkljs65h.gz",
+      "Id": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\Client\\obj\\Debug\\net8.0\\compressed\\169u99hjvp.gz",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
     },
     {
@@ -31,6 +31,14 @@
     {
       "Id": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\Client\\wwwroot\\icon-192.png",
       "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\Client\\wwwroot\\images\\background\\office.webp",
+      "PackagePath": "staticwebassets\\images\\background\\office.webp"
+    },
+    {
+      "Id": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\Client\\wwwroot\\images\\companylogos\\no_bg_logo.png",
+      "PackagePath": "staticwebassets\\images\\companylogos\\no_bg_logo.png"
     },
     {
       "Id": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\Client\\wwwroot\\index.html",

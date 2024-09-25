@@ -739,6 +739,8 @@
         "dependencies": {
           "BaseLibrary": "1.0.0",
           "Blazored.LocalStorage": "4.5.0",
+          "Microsoft.AspNetCore.Components.Authorization": "8.0.8",
+          "Microsoft.Extensions.Http": "8.0.0",
           "System.IdentityModel.Tokens.Jwt": "8.0.2"
         },
         "compile": {
@@ -1481,6 +1483,8 @@
         "dependencies": {
           "BaseLibrary": "1.0.0",
           "Blazored.LocalStorage": "4.5.0",
+          "Microsoft.AspNetCore.Components.Authorization": "8.0.8",
+          "Microsoft.Extensions.Http": "8.0.0",
           "System.IdentityModel.Tokens.Jwt": "8.0.2"
         },
         "compile": {

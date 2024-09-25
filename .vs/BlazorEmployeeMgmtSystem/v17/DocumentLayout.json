@@ -3,20 +3,84 @@
   "WorkspaceRootPath": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C7F95478-9DB9-4332-9941-CE1441209A47}|ClientLibrary\\ClientLibrary.csproj|m:\\projects\\portfolio\\blazoremployeemgmtsystem\\clientlibrary\\helpers\\localstorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7F95478-9DB9-4332-9941-CE1441209A47}|ClientLibrary\\ClientLibrary.csproj|solutionrelative:clientlibrary\\helpers\\localstorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FD580489-CFD4-43B8-94A5-18E2F892F074}|Client\\Client.csproj|m:\\projects\\portfolio\\blazoremployeemgmtsystem\\client\\pages\\accountpages\\loginpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FD580489-CFD4-43B8-94A5-18E2F892F074}|Client\\Client.csproj|solutionrelative:client\\pages\\accountpages\\loginpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C7F95478-9DB9-4332-9941-CE1441209A47}|ClientLibrary\\ClientLibrary.csproj|m:\\projects\\portfolio\\blazoremployeemgmtsystem\\clientlibrary\\helpers\\serializations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7F95478-9DB9-4332-9941-CE1441209A47}|ClientLibrary\\ClientLibrary.csproj|solutionrelative:clientlibrary\\helpers\\serializations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FD580489-CFD4-43B8-94A5-18E2F892F074}|Client\\Client.csproj|m:\\projects\\portfolio\\blazoremployeemgmtsystem\\client\\layout\\authlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FD580489-CFD4-43B8-94A5-18E2F892F074}|Client\\Client.csproj|solutionrelative:client\\layout\\authlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD580489-CFD4-43B8-94A5-18E2F892F074}|Client\\Client.csproj|m:\\projects\\portfolio\\blazoremployeemgmtsystem\\client\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FD580489-CFD4-43B8-94A5-18E2F892F074}|Client\\Client.csproj|solutionrelative:client\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD580489-CFD4-43B8-94A5-18E2F892F074}|Client\\Client.csproj|m:\\projects\\portfolio\\blazoremployeemgmtsystem\\client\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FD580489-CFD4-43B8-94A5-18E2F892F074}|Client\\Client.csproj|solutionrelative:client\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD580489-CFD4-43B8-94A5-18E2F892F074}|Client\\Client.csproj|m:\\projects\\portfolio\\blazoremployeemgmtsystem\\client\\pages\\accountpages\\registerpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FD580489-CFD4-43B8-94A5-18E2F892F074}|Client\\Client.csproj|solutionrelative:client\\pages\\accountpages\\registerpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD580489-CFD4-43B8-94A5-18E2F892F074}|Client\\Client.csproj|m:\\projects\\portfolio\\blazoremployeemgmtsystem\\client\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FD580489-CFD4-43B8-94A5-18E2F892F074}|Client\\Client.csproj|solutionrelative:client\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD580489-CFD4-43B8-94A5-18E2F892F074}|Client\\Client.csproj|m:\\projects\\portfolio\\blazoremployeemgmtsystem\\client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD580489-CFD4-43B8-94A5-18E2F892F074}|Client\\Client.csproj|solutionrelative:client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A7A6C40-F551-4DD4-8E79-BF9C8822C327}|ServerLibrary\\ServerLibrary.csproj|m:\\projects\\portfolio\\blazoremployeemgmtsystem\\serverlibrary\\repositories\\implementations\\useraccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A7A6C40-F551-4DD4-8E79-BF9C8822C327}|ServerLibrary\\ServerLibrary.csproj|solutionrelative:serverlibrary\\repositories\\implementations\\useraccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7F95478-9DB9-4332-9941-CE1441209A47}|ClientLibrary\\ClientLibrary.csproj|m:\\projects\\portfolio\\blazoremployeemgmtsystem\\clientlibrary\\helpers\\customhttphandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7F95478-9DB9-4332-9941-CE1441209A47}|ClientLibrary\\ClientLibrary.csproj|solutionrelative:clientlibrary\\helpers\\customhttphandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7F95478-9DB9-4332-9941-CE1441209A47}|ClientLibrary\\ClientLibrary.csproj|m:\\projects\\portfolio\\blazoremployeemgmtsystem\\clientlibrary\\helpers\\gethttpclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7F95478-9DB9-4332-9941-CE1441209A47}|ClientLibrary\\ClientLibrary.csproj|solutionrelative:clientlibrary\\helpers\\gethttpclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7F95478-9DB9-4332-9941-CE1441209A47}|ClientLibrary\\ClientLibrary.csproj|m:\\projects\\portfolio\\blazoremployeemgmtsystem\\clientlibrary\\services\\implementations\\useraccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7F95478-9DB9-4332-9941-CE1441209A47}|ClientLibrary\\ClientLibrary.csproj|solutionrelative:clientlibrary\\services\\implementations\\useraccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C389DEEB-2EB4-4FDF-B945-72670E148775}|Server\\Server.csproj|m:\\projects\\portfolio\\blazoremployeemgmtsystem\\server\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C389DEEB-2EB4-4FDF-B945-72670E148775}|Server\\Server.csproj|solutionrelative:server\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7F95478-9DB9-4332-9941-CE1441209A47}|ClientLibrary\\ClientLibrary.csproj|m:\\projects\\portfolio\\blazoremployeemgmtsystem\\clientlibrary\\helpers\\customauthenticationstateprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7F95478-9DB9-4332-9941-CE1441209A47}|ClientLibrary\\ClientLibrary.csproj|solutionrelative:clientlibrary\\helpers\\customauthenticationstateprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C389DEEB-2EB4-4FDF-B945-72670E148775}|Server\\Server.csproj|m:\\projects\\portfolio\\blazoremployeemgmtsystem\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C389DEEB-2EB4-4FDF-B945-72670E148775}|Server\\Server.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7B8AEB86-3920-402F-BB06-AF911473DB62}|BaseLibrary\\BaseLibrary.csproj|m:\\projects\\portfolio\\blazoremployeemgmtsystem\\baselibrary\\dto\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B8AEB86-3920-402F-BB06-AF911473DB62}|BaseLibrary\\BaseLibrary.csproj|solutionrelative:baselibrary\\dto\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C7F95478-9DB9-4332-9941-CE1441209A47}|ClientLibrary\\ClientLibrary.csproj|m:\\projects\\portfolio\\blazoremployeemgmtsystem\\clientlibrary\\services\\implementations\\useraccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7F95478-9DB9-4332-9941-CE1441209A47}|ClientLibrary\\ClientLibrary.csproj|solutionrelative:clientlibrary\\services\\implementations\\useraccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B8AEB86-3920-402F-BB06-AF911473DB62}|BaseLibrary\\BaseLibrary.csproj|m:\\projects\\portfolio\\blazoremployeemgmtsystem\\baselibrary\\dto\\customuserclaims.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B8AEB86-3920-402F-BB06-AF911473DB62}|BaseLibrary\\BaseLibrary.csproj|solutionrelative:baselibrary\\dto\\customuserclaims.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C389DEEB-2EB4-4FDF-B945-72670E148775}|Server\\Server.csproj|m:\\projects\\portfolio\\blazoremployeemgmtsystem\\server\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C389DEEB-2EB4-4FDF-B945-72670E148775}|Server\\Server.csproj|solutionrelative:server\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD580489-CFD4-43B8-94A5-18E2F892F074}|Client\\Client.csproj|m:\\projects\\portfolio\\blazoremployeemgmtsystem\\client\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FD580489-CFD4-43B8-94A5-18E2F892F074}|Client\\Client.csproj|solutionrelative:client\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD580489-CFD4-43B8-94A5-18E2F892F074}|Client\\Client.csproj|m:\\projects\\portfolio\\blazoremployeemgmtsystem\\client\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FD580489-CFD4-43B8-94A5-18E2F892F074}|Client\\Client.csproj|solutionrelative:client\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7F95478-9DB9-4332-9941-CE1441209A47}|ClientLibrary\\ClientLibrary.csproj|m:\\projects\\portfolio\\blazoremployeemgmtsystem\\clientlibrary\\helpers\\serializations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7F95478-9DB9-4332-9941-CE1441209A47}|ClientLibrary\\ClientLibrary.csproj|solutionrelative:clientlibrary\\helpers\\serializations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C7F95478-9DB9-4332-9941-CE1441209A47}|ClientLibrary\\ClientLibrary.csproj|m:\\projects\\portfolio\\blazoremployeemgmtsystem\\clientlibrary\\services\\contracts\\iuseraccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,86 +98,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LocalStorageService.cs",
-              "DocumentMoniker": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\ClientLibrary\\Helpers\\LocalStorageService.cs",
-              "RelativeDocumentMoniker": "ClientLibrary\\Helpers\\LocalStorageService.cs",
-              "ToolTip": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\ClientLibrary\\Helpers\\LocalStorageService.cs",
-              "RelativeToolTip": "ClientLibrary\\Helpers\\LocalStorageService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T04:37:46.448Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Serializations.cs",
-              "DocumentMoniker": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\ClientLibrary\\Helpers\\Serializations.cs",
-              "RelativeDocumentMoniker": "ClientLibrary\\Helpers\\Serializations.cs",
-              "ToolTip": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\ClientLibrary\\Helpers\\Serializations.cs",
-              "RelativeToolTip": "ClientLibrary\\Helpers\\Serializations.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T04:24:01.746Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserSession.cs",
-              "DocumentMoniker": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\BaseLibrary\\DTO\\UserSession.cs",
-              "RelativeDocumentMoniker": "BaseLibrary\\DTO\\UserSession.cs",
-              "ToolTip": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\BaseLibrary\\DTO\\UserSession.cs",
-              "RelativeToolTip": "BaseLibrary\\DTO\\UserSession.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T04:20:37.17Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserAccountService.cs",
-              "DocumentMoniker": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\ClientLibrary\\Services\\Implementations\\UserAccountService.cs",
-              "RelativeDocumentMoniker": "ClientLibrary\\Services\\Implementations\\UserAccountService.cs",
-              "ToolTip": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\ClientLibrary\\Services\\Implementations\\UserAccountService.cs",
-              "RelativeToolTip": "ClientLibrary\\Services\\Implementations\\UserAccountService.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T01:41:14.71Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IUserAccountService.cs",
-              "DocumentMoniker": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\ClientLibrary\\Services\\Contracts\\IUserAccountService.cs",
-              "RelativeDocumentMoniker": "ClientLibrary\\Services\\Contracts\\IUserAccountService.cs",
-              "ToolTip": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\ClientLibrary\\Services\\Contracts\\IUserAccountService.cs",
-              "RelativeToolTip": "ClientLibrary\\Services\\Contracts\\IUserAccountService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T01:32:02.303Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ClientLibrary",
-              "DocumentMoniker": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\ClientLibrary\\ClientLibrary.csproj",
-              "RelativeDocumentMoniker": "ClientLibrary\\ClientLibrary.csproj",
-              "ToolTip": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\ClientLibrary\\ClientLibrary.csproj",
-              "RelativeToolTip": "ClientLibrary\\ClientLibrary.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-21T23:18:56.225Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
@@ -129,6 +115,290 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthLayout.razor",
+              "DocumentMoniker": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\Client\\Layout\\AuthLayout.razor",
+              "RelativeDocumentMoniker": "Client\\Layout\\AuthLayout.razor",
+              "ToolTip": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\Client\\Layout\\AuthLayout.razor",
+              "RelativeToolTip": "Client\\Layout\\AuthLayout.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-24T23:43:11.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginPage.razor",
+              "DocumentMoniker": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\Client\\Pages\\AccountPages\\LoginPage.razor",
+              "RelativeDocumentMoniker": "Client\\Pages\\AccountPages\\LoginPage.razor",
+              "ToolTip": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\Client\\Pages\\AccountPages\\LoginPage.razor",
+              "RelativeToolTip": "Client\\Pages\\AccountPages\\LoginPage.razor",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T19:02:28.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\Client\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Client\\Layout\\NavMenu.razor",
+              "ToolTip": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\Client\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "Client\\Layout\\NavMenu.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T15:09:37.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\Client\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "Client\\Layout\\MainLayout.razor",
+              "ToolTip": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\Client\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "Client\\Layout\\MainLayout.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAiwBMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T15:16:08.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RegisterPage.razor",
+              "DocumentMoniker": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\Client\\Pages\\AccountPages\\RegisterPage.razor",
+              "RelativeDocumentMoniker": "Client\\Pages\\AccountPages\\RegisterPage.razor",
+              "ToolTip": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\Client\\Pages\\AccountPages\\RegisterPage.razor",
+              "RelativeToolTip": "Client\\Pages\\AccountPages\\RegisterPage.razor",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-24T21:51:01.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\Client\\_Imports.razor",
+              "RelativeDocumentMoniker": "Client\\_Imports.razor",
+              "ToolTip": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\Client\\_Imports.razor",
+              "RelativeToolTip": "Client\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T16:23:32.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserAccountRepository.cs",
+              "DocumentMoniker": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\ServerLibrary\\Repositories\\Implementations\\UserAccountRepository.cs",
+              "RelativeDocumentMoniker": "ServerLibrary\\Repositories\\Implementations\\UserAccountRepository.cs",
+              "ToolTip": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\ServerLibrary\\Repositories\\Implementations\\UserAccountRepository.cs",
+              "RelativeToolTip": "ServerLibrary\\Repositories\\Implementations\\UserAccountRepository.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAqwCMAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T03:47:34.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\Client\\Program.cs",
+              "RelativeDocumentMoniker": "Client\\Program.cs",
+              "ToolTip": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\Client\\Program.cs",
+              "RelativeToolTip": "Client\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T13:30:09.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CustomHttpHandler.cs",
+              "DocumentMoniker": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\ClientLibrary\\Helpers\\CustomHttpHandler.cs",
+              "RelativeDocumentMoniker": "ClientLibrary\\Helpers\\CustomHttpHandler.cs",
+              "ToolTip": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\ClientLibrary\\Helpers\\CustomHttpHandler.cs",
+              "RelativeToolTip": "ClientLibrary\\Helpers\\CustomHttpHandler.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAiwDYAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T04:00:51.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GetHttpClient.cs",
+              "DocumentMoniker": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\ClientLibrary\\Helpers\\GetHttpClient.cs",
+              "RelativeDocumentMoniker": "ClientLibrary\\Helpers\\GetHttpClient.cs",
+              "ToolTip": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\ClientLibrary\\Helpers\\GetHttpClient.cs",
+              "RelativeToolTip": "ClientLibrary\\Helpers\\GetHttpClient.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAIwB0AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T20:46:56.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserAccountService.cs",
+              "DocumentMoniker": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\ClientLibrary\\Services\\Implementations\\UserAccountService.cs",
+              "RelativeDocumentMoniker": "ClientLibrary\\Services\\Implementations\\UserAccountService.cs",
+              "ToolTip": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\ClientLibrary\\Services\\Implementations\\UserAccountService.cs",
+              "RelativeToolTip": "ClientLibrary\\Services\\Implementations\\UserAccountService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T01:41:14.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AuthenticationController.cs",
+              "DocumentMoniker": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\Server\\Controllers\\AuthenticationController.cs",
+              "RelativeDocumentMoniker": "Server\\Controllers\\AuthenticationController.cs",
+              "ToolTip": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\Server\\Controllers\\AuthenticationController.cs",
+              "RelativeToolTip": "Server\\Controllers\\AuthenticationController.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAqwAoAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T03:57:37.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\Server\\Program.cs",
+              "RelativeDocumentMoniker": "Server\\Program.cs",
+              "ToolTip": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\Server\\Program.cs",
+              "RelativeToolTip": "Server\\Program.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAAEAAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T14:45:39.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CustomAuthenticationStateProvider.cs",
+              "DocumentMoniker": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\ClientLibrary\\Helpers\\CustomAuthenticationStateProvider.cs",
+              "RelativeDocumentMoniker": "ClientLibrary\\Helpers\\CustomAuthenticationStateProvider.cs",
+              "ToolTip": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\ClientLibrary\\Helpers\\CustomAuthenticationStateProvider.cs",
+              "RelativeToolTip": "ClientLibrary\\Helpers\\CustomAuthenticationStateProvider.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T23:22:40.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserSession.cs",
+              "DocumentMoniker": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\BaseLibrary\\DTO\\UserSession.cs",
+              "RelativeDocumentMoniker": "BaseLibrary\\DTO\\UserSession.cs",
+              "ToolTip": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\BaseLibrary\\DTO\\UserSession.cs",
+              "RelativeToolTip": "BaseLibrary\\DTO\\UserSession.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T04:20:37.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CustomUserClaims.cs",
+              "DocumentMoniker": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\BaseLibrary\\DTO\\CustomUserClaims.cs",
+              "RelativeDocumentMoniker": "BaseLibrary\\DTO\\CustomUserClaims.cs",
+              "ToolTip": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\BaseLibrary\\DTO\\CustomUserClaims.cs",
+              "RelativeToolTip": "BaseLibrary\\DTO\\CustomUserClaims.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T02:32:57.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\Server\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Server\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\Server\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Server\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T23:19:03.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Weather.razor",
+              "DocumentMoniker": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\Client\\Pages\\Weather.razor",
+              "RelativeDocumentMoniker": "Client\\Pages\\Weather.razor",
+              "ToolTip": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\Client\\Pages\\Weather.razor",
+              "RelativeToolTip": "Client\\Pages\\Weather.razor",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAACoAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T22:09:59.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "App.razor",
+              "DocumentMoniker": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\Client\\App.razor",
+              "RelativeDocumentMoniker": "Client\\App.razor",
+              "ToolTip": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\Client\\App.razor",
+              "RelativeToolTip": "Client\\App.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T14:56:41.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Serializations.cs",
+              "DocumentMoniker": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\ClientLibrary\\Helpers\\Serializations.cs",
+              "RelativeDocumentMoniker": "ClientLibrary\\Helpers\\Serializations.cs",
+              "ToolTip": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\ClientLibrary\\Helpers\\Serializations.cs",
+              "RelativeToolTip": "ClientLibrary\\Helpers\\Serializations.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T04:24:01.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IUserAccountService.cs",
+              "DocumentMoniker": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\ClientLibrary\\Services\\Contracts\\IUserAccountService.cs",
+              "RelativeDocumentMoniker": "ClientLibrary\\Services\\Contracts\\IUserAccountService.cs",
+              "ToolTip": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\ClientLibrary\\Services\\Contracts\\IUserAccountService.cs",
+              "RelativeToolTip": "ClientLibrary\\Services\\Contracts\\IUserAccountService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T01:32:02.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ClientLibrary.csproj",
+              "DocumentMoniker": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\ClientLibrary\\ClientLibrary.csproj",
+              "RelativeDocumentMoniker": "ClientLibrary\\ClientLibrary.csproj",
+              "ToolTip": "M:\\projects\\portfolio\\BlazorEmployeeMgmtSystem\\ClientLibrary\\ClientLibrary.csproj",
+              "RelativeToolTip": "ClientLibrary\\ClientLibrary.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-21T23:18:56.225Z",
+              "EditorCaption": ""
             }
           ]
         }

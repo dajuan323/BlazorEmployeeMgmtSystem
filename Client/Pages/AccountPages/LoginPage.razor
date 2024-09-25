@@ -1,0 +1,52 @@
+﻿@page "/identity/account/login"
+@layout AuthLayout
+<div class="container">
+    <div class="row">
+        <div class="col-lg-5"></div>
+        <div class="col-lg-2">
+            <EditForm Enhance Model="User" OnValidSubmit="HandleLogin">
+                <DataAnnotationsValidator />
+                <ValidationSummary />
+                <div class="card bg-dark" style="opacity:0.7; margin-top:50%; border-radius:10px; color:white; font-weight:bold">
+                    <div class="card-header text-center fs-5 mb-2">Login</div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4"></div>
+                            <div class="col-lg-5 col-md-5 col-sm-5 d-flex justify-content-center">
+                                <img style="border-radius:3px" src="../images/companylogos/no_bg_logo.png" height="50" width="50" />
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4"></div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group mt-3">
+                            <label class="form-label">Email</label>
+                            <InputText @bind-Value="User.Email" class="form-control"></InputText>
+                        </div>
+                        <div class="form-group mt-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" @bind="User.Password" class="form-control"></input>
+                        </div>
+                        <div class="form-group mt-3">
+                            <button class="btn btn-outline-primary float-end" type="submit">Login</button>
+                        </div>
+                    </div>
+                </div>
+            </EditForm>
+        </div>
+        <div class="col-lg-5"></div>
+    </div>
+</div>
+@code {
+    Login User = new();
+    async Task HandleLogin()
+    {
+        var result = await accountService.SignInAsync(User);
+        if (result.Flag)
+        {
+            var customAuthStateProvider = (CustomAuthenticationStateProvider)AuthStateProvider;
+            await customAuthStateProvider.UpdateAuthenticationState(new UserSession() { Token = result.Token, RefreshToken =  result.RefreshToken});
+            NavManager.NavigateTo("/", forceLoad: true);
+        }
+    }
+}
