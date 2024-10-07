@@ -6,6 +6,6 @@ using System.Threading.Tasks;
 
 namespace BaseLibrary.DTO;
 
-public class Login : AccountBase
+public sealed record Login : AccountBase
 {
 }

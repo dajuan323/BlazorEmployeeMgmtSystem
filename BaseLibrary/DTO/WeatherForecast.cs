@@ -1,6 +1,6 @@
 namespace BaseLibrary.DTO
 {
-    public class WeatherForecast
+    public record WeatherForecast
     {
         public DateOnly Date { get; set; }
 

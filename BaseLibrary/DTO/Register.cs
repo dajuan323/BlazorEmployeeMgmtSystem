@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BaseLibrary.DTO;
 
-public class Register : AccountBase
+public sealed record Register : AccountBase
 {
     [Required]
     [MinLength(5)]
