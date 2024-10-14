@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace BaseLibrary.Entities;
@@ -13,5 +14,6 @@ public class Branch : BaseEntity
     public int DepartmentId { get; set; }
 
     // One to many relationship to Employee
+    [JsonIgnore]
     public List<Employee>? Employees { get; set; }
 }

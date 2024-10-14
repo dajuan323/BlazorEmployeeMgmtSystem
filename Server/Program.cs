@@ -1,7 +1,9 @@
+using BaseLibrary.Entities;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Server.Controllers;
 using ServerLibrary.Data;
 using ServerLibrary.Helpers;
 using ServerLibrary.Repositories.Contracts;
@@ -26,37 +28,7 @@ builder.Services.AddDbContext<AppDbContext>(options=>
         throw new InvalidOperationException("Database not found."));
 });
 
-//builder.Services.AddSwaggerGen(c =>
-//{
-//    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Employee Mgmt Blz", Version = "v1" });
 
-//    // Define the API Security scheme
-//    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
-//    {
-//        In = ParameterLocation.Header,
-//        Description = "Enter key",
-//        Name = "Authorization",
-//        Type = SecuritySchemeType.ApiKey,
-//        Scheme = "bearer",
-//        BearerFormat = "JWT"
-//    });
-
-//    // Add security requirement
-//    c.AddSecurityRequirement(new OpenApiSecurityRequirement
-//    {
-//        {
-//            new OpenApiSecurityScheme
-//            {
-//                Reference = new OpenApiReference
-//                {
-//                    Type = ReferenceType.SecurityScheme,
-//                    Id = "Bearer"
-//                }
-//            },
-//            new string[] {}
-//        }
-//    });
-//});
 
 builder.Services.AddAuthentication(options =>
 {
@@ -77,6 +49,15 @@ builder.Services.AddAuthentication(options =>
 });
 
 builder.Services.AddScoped<IUserAccount, UserAccountRepository>();
+
+builder.Services.AddScoped<IGenericRepositoryInterface<GeneralDepartment>, GeneralDepartmentRepository>();
+builder.Services.AddScoped<IGenericRepositoryInterface<Department>, DepartmentRepository>();
+builder.Services.AddScoped<IGenericRepositoryInterface<Branch>, BranchRepository>();
+
+builder.Services.AddScoped<IGenericRepositoryInterface<Country>, CountryRepository>();
+builder.Services.AddScoped<IGenericRepositoryInterface<City>, CityRepository>();
+builder.Services.AddScoped<IGenericRepositoryInterface<Town>, TownRepository>();
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowBlazorWasm",

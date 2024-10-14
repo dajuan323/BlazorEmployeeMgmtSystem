@@ -1,7 +1,5 @@
 ﻿@page "/identity/account/register"
-@using Client.Pages.OtherPages
-@using Syncfusion.Blazor.Popups
-@inject SfDialogService DialogService
+
 @layout AuthLayout
 
 <div class="container">
@@ -92,7 +90,7 @@
 
     private async Task DisplayDialog(string content, string title)
     {
-        await DialogService.AlertAsync(content, title);
+        await dialogService.AlertAsync(content, title);
     }
 
     private async Task CheckUserAuthentication()
