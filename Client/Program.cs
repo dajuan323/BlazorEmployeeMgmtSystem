@@ -8,12 +8,21 @@ using ClientLibrary.Services.Implementations;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+using Microsoft.JSInterop;
 using Syncfusion.Blazor;
 using Syncfusion.Blazor.Popups;
+using Syncfusion.Licensing;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
+
+//SyncfusionLicenseProvider.RegisterLicense(builder.Configuration["SyncFusion:MyKey"]);
+var syncfusionLicenseKey = builder.Configuration["SyncFusion:MyKey"];
+
+SyncfusionLicenseProvider.RegisterLicense(syncfusionLicenseKey);
+
+builder.Services.AddSingleton(new SyncfusionLicense { Key = syncfusionLicenseKey! });
 
 builder.Services.AddTransient<CustomHttpHandler>();
 builder.Services.AddHttpClient("SystemApiClient", client =>

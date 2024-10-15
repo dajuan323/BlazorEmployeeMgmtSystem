@@ -40,6 +40,7 @@ public class DepartmentRepository(AppDbContext _context) : IGenericRepositoryInt
         var dep = await _context.Departments.FindAsync(item.Id);
         if (dep is null) return NotFound();
         dep.Name = item.Name;
+        dep.GeneralDepartmentId = item.GeneralDepartmentId;
         await Commit();
         return Success();
     }

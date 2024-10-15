@@ -19,8 +19,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
+
 builder.Services.Configure<JwtSection>(builder.Configuration.GetSection("JwtSection"));
 var jwtSection = builder.Configuration.GetSection(nameof(JwtSection)).Get<JwtSection>();
+
 
 builder.Services.AddDbContext<AppDbContext>(options=>
 {
@@ -78,6 +81,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseCors("AllowBlazorWasm");
+
+
 
 app.UseAuthentication();
 app.UseAuthorization();
