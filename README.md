@@ -1,2 +1,2 @@
 # BlazorEmployeeMgmtSystem
-Demo Employee management system via Blazor WASM for portfolio
+Demo Employee management system via Blazor .NET WASM for portfolio
