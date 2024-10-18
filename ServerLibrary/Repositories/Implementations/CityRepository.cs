@@ -25,7 +25,11 @@ public class CityRepository(AppDbContext _context) : IGenericRepositoryInterface
 
     public async Task<City> Get(int id) => await _context.Cities.FindAsync(id);
 
-    public async Task<List<City>> GetAll() => await _context.Cities.ToListAsync();
+    public async Task<List<City>> GetAll() => await _context
+        .Cities
+        .AsNoTracking()
+        .Include(c => c.Country)
+        .ToListAsync();
 
     public async Task<GeneralResponse> Insert(City item)
     {
@@ -41,6 +45,7 @@ public class CityRepository(AppDbContext _context) : IGenericRepositoryInterface
         if (city == null ) return NotFound();
 
         city.Name = item.Name;
+        city.CountryId = item.CountryId;
         await Commit();
         return Success();
     }
