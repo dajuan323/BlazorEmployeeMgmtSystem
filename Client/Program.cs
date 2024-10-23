@@ -8,18 +8,25 @@ using ClientLibrary.Services.Implementations;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+using Microsoft.Extensions.Options;
 using Microsoft.JSInterop;
+using Serilog;
 using Syncfusion.Blazor;
 using Syncfusion.Blazor.Popups;
 
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
-builder.RootComponents.Add<App>("#app");
-builder.RootComponents.Add<HeadOutlet>("head::after");
 
+// add appsettings.json
+builder.Configuration.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
 
+// Add user secrets
 
-
+//var testKey = builder.Configuration["SecretTest:SecretKey"];
+//if (testKey != null)
+//    Console.WriteLine($"testKey: {testKey}");
+//else
+//    Console.WriteLine("Error in the secrets");
 
 builder.Services.AddTransient<CustomHttpHandler>();
 builder.Services.AddHttpClient("SystemApiClient", client =>
@@ -27,7 +34,36 @@ builder.Services.AddHttpClient("SystemApiClient", client =>
     client.BaseAddress = new Uri("https://localhost:7164");
 }).AddHttpMessageHandler<CustomHttpHandler>();
 
-// builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("https://localhost:7164") });
+// Register SyncFusion License
+builder.Services.Configure<SyncFusion>(builder.Configuration.GetSection("SyncFusion"));
+var syncFusionKeyBeta = builder.Configuration.GetSection(nameof(SyncFusion)).Get<SyncFusion>();
+
+Console.WriteLine($"Beta: {syncFusionKeyBeta?.MyKey}");
+
+
+if (!string.IsNullOrEmpty(syncFusionKeyBeta?.MyKey))
+{
+    Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense(syncFusionKeyBeta?.MyKey);
+}
+else
+{
+    throw new InvalidOperationException("SyncFusion license key is not configured.");
+}
+
+
+// Add Serilog
+//Log.Logger = new LoggerConfiguration()
+//    .ReadFrom.Configuration(builder.Configuration)
+//    .Enrich.FromLogContext()
+//    .CreateLogger();
+
+//builder.Logging.ClearProviders();
+//builder.Logging.AddSerilog(Log.Logger);
+
+// Example Log
+//Log.Information("Application starting...");
+
+
 builder.Services.AddAuthorizationCore();
 builder.Services.AddBlazoredLocalStorage();
 builder.Services.AddScoped<GetHttpClient>();
@@ -50,7 +86,14 @@ builder.Services.AddScoped<IGenericServiceInterface<Employee>, GenericServiceImp
 
 builder.Services.AddScoped<AllState>();
 
+
+
 builder.Services.AddSyncfusionBlazor();
 builder.Services.AddScoped<SfDialogService>();
+
+
+builder.RootComponents.Add<App>("#app");
+builder.RootComponents.Add<HeadOutlet>("head::after");
+
 
 await builder.Build().RunAsync();

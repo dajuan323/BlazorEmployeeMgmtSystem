@@ -2,7 +2,6 @@
 @using Microsoft.AspNetCore.Authorization
 @using Syncfusion.Blazor.Popups
 @inject IJSRuntime JSRuntime
-@inject SyncfusionLicense SyncfusionLicense
 @inherits LayoutComponentBase
 @attribute [Authorize]
 
@@ -30,10 +29,5 @@
         var customAuthStateProvider = (CustomAuthenticationStateProvider)AuthStateProvider;
         await customAuthStateProvider.UpdateAuthenticationState(logoutModel);
         NavManager.NavigateTo("/", forceLoad: true);
-    }
-
-    protected override async Task OnInitializedAsync()
-    {
-        await JSRuntime.InvokeVoidAsync("setSyncfusionLicenseKey", SyncfusionLicense.Key);
     }
 }

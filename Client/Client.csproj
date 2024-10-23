@@ -13,10 +13,16 @@
 	<PackageReference Include="Microsoft.Extensions.Http" Version="8.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.10" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.10" PrivateAssets="all" />
+	  <PackageReference Include="Serilog" Version="4.0.2" />
+	  <PackageReference Include="Serilog.Extensions.Logging" Version="8.0.0" />
+	  <PackageReference Include="Serilog.Settings.Configuration" Version="8.0.4" />
+	  <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" />
     <PackageReference Include="Syncfusion.Blazor.Buttons" Version="27.1.52" />
+    <PackageReference Include="Syncfusion.Blazor.Grid" Version="27.1.52" />
     <PackageReference Include="Syncfusion.Blazor.Popups" Version="27.1.52" />
     <PackageReference Include="Syncfusion.Blazor.Themes" Version="27.1.52" />
     <PackageReference Include="Syncfusion.Blazor.DropDowns" Version="27.1.52" />
+    <PackageReference Include="Syncfusion.Licensing" Version="27.1.52" />
   </ItemGroup>
 
   <ItemGroup>

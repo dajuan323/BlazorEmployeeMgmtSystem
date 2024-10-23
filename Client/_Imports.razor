@@ -3,18 +3,26 @@
 @using BaseLibrary.Entities
 @using Client.ApplicationStates
 @using ClientLibrary.Services.Contracts
+
 @using Microsoft.AspNetCore.Components.Forms
 @using Microsoft.AspNetCore.Components.Routing
 @using Microsoft.AspNetCore.Components.Web
 @using Microsoft.AspNetCore.Components.Web.Virtualization
 @using Microsoft.AspNetCore.Components.WebAssembly.Http
+
+@using Microsoft.Extensions.Configuration
+
 @using Microsoft.JSInterop
+
 @using Client
 @using Client.Layout
+
 @using Client.Pages.ContentPages.DepartmentPages
 @using Client.Pages.ContentPages.LocationPages
 @using Client.Pages.UserPages
 @using Client.Pages.OtherPages
+@using Client.Pages.OtherPages
+@using Client.Pages.EmployeePages
 
 @using BaseLibrary.DTO
 @using ClientLibrary.Helpers
@@ -22,7 +30,11 @@
 
 @using Syncfusion.Blazor.DropDowns
 @using Syncfusion.Blazor.Popups
-@using Client.Pages.OtherPages
+@using Syncfusion.Blazor.Grids
+@using Syncfusion.Blazor
+
+
+
 
 
 @inject AuthenticationStateProvider AuthStateProvider
