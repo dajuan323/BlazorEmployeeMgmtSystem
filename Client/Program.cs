@@ -8,9 +8,6 @@ using ClientLibrary.Services.Implementations;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
-using Microsoft.Extensions.Options;
-using Microsoft.JSInterop;
-using Serilog;
 using Syncfusion.Blazor;
 using Syncfusion.Blazor.Popups;
 
