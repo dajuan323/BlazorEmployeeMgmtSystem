@@ -20,14 +20,6 @@ var builder = WebAssemblyHostBuilder.CreateDefault(args);
 // add appsettings.json
 builder.Configuration.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
 
-// Add user secrets
-
-//var testKey = builder.Configuration["SecretTest:SecretKey"];
-//if (testKey != null)
-//    Console.WriteLine($"testKey: {testKey}");
-//else
-//    Console.WriteLine("Error in the secrets");
-
 builder.Services.AddTransient<CustomHttpHandler>();
 builder.Services.AddHttpClient("SystemApiClient", client =>
 {
@@ -51,17 +43,6 @@ else
 }
 
 
-// Add Serilog
-//Log.Logger = new LoggerConfiguration()
-//    .ReadFrom.Configuration(builder.Configuration)
-//    .Enrich.FromLogContext()
-//    .CreateLogger();
-
-//builder.Logging.ClearProviders();
-//builder.Logging.AddSerilog(Log.Logger);
-
-// Example Log
-//Log.Information("Application starting...");
 
 
 builder.Services.AddAuthorizationCore();
