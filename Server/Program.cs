@@ -12,10 +12,18 @@ using ServerLibrary.Repositories.Contracts;
 using ServerLibrary.Repositories.Implementations;
 using System.Text;
 using Syncfusion.Licensing;
+using Server.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+// ------------------------
+// Registrar
+//********
+builder.RegisterServices(typeof(Program));
+//********
+// ------------------------
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -24,23 +32,23 @@ builder.Services.AddSwaggerGen();
 
 
 // Logging
-Log.Logger = new LoggerConfiguration()
-    .ReadFrom.Configuration(builder.Configuration)
-    .Enrich.FromLogContext()
-    .CreateLogger();
+//Log.Logger = new LoggerConfiguration()
+//    .ReadFrom.Configuration(builder.Configuration)
+//    .Enrich.FromLogContext()
+//    .CreateLogger();
 
-builder.Logging.ClearProviders();
-builder.Logging.AddSerilog(Log.Logger);
+//builder.Logging.ClearProviders();
+//builder.Logging.AddSerilog(Log.Logger);
 
 builder.Services.Configure<JwtSection>(builder.Configuration.GetSection("JwtSection"));
 var jwtSection = builder.Configuration.GetSection(nameof(JwtSection)).Get<JwtSection>();
 
 
-builder.Services.AddDbContext<AppDbContext>(options=>
-{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("Default") ??
-        throw new InvalidOperationException("Database not found."));
-});
+//builder.Services.AddDbContext<AppDbContext>(options=>
+//{
+//    options.UseSqlServer(builder.Configuration.GetConnectionString("Default") ??
+//        throw new InvalidOperationException("Database not found."));
+//});
 
 
 
