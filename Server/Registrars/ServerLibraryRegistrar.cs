@@ -4,7 +4,7 @@ using ServerLibrary;
 
 namespace Server.Registrars;
 
-public class DbRegistrar : IWebApplicationBuilderRegistrar
+public class ServerLibraryRegistrar : IWebApplicationBuilderRegistrar
 {
     public void RegisterServices(WebApplicationBuilder builder)
     {

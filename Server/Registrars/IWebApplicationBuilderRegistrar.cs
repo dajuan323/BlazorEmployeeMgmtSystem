@@ -2,5 +2,5 @@
 
 public interface IWebApplicationBuilderRegistrar : IRegistrar
 {
-    void RegisterServices(WebApplicationBuilder app);
+    void RegisterServices(WebApplicationBuilder builder);
 }

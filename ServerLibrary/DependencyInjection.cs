@@ -1,7 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using BaseLibrary.Entities;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using ServerLibrary.Data;
+using ServerLibrary.Repositories.Contracts;
+using ServerLibrary.Repositories.Implementations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +24,18 @@ public static class DependencyInjection
             options.UseSqlServer(configuration.GetConnectionString("Default") ??
                 throw new InvalidOperationException("Database not found."));
         });
+
+        services.AddScoped<IUserAccount, UserAccountRepository>();
+
+        services.AddScoped<IGenericRepositoryInterface<GeneralDepartment>, GeneralDepartmentRepository>();
+        services.AddScoped<IGenericRepositoryInterface<Department>, DepartmentRepository>();
+        services.AddScoped<IGenericRepositoryInterface<Branch>, BranchRepository>();
+
+        services.AddScoped<IGenericRepositoryInterface<Country>, CountryRepository>();
+        services.AddScoped<IGenericRepositoryInterface<City>, CityRepository>();
+        services.AddScoped<IGenericRepositoryInterface<Town>, TownRepository>();
+
+        services.AddScoped<IGenericRepositoryInterface<Employee>, EmployeeRepository>();
 
         return services;
     }

@@ -1,5 +1,4 @@
-﻿
-namespace ClientLibrary.Helpers;
+﻿namespace Client;
 
 public class SyncFusion
 {
