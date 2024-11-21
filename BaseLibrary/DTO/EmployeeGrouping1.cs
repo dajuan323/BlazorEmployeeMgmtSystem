@@ -12,7 +12,7 @@ public record EmployeeGrouping1
     public string? Name { get; set; } = string.Empty;
     [Required]
     public string? Address { get; set; } = string.Empty;
-    [Required, DataType(DataType.PhoneNumber)]
+    [Required]
     public string? TelephoneNumber { get; set; } = string.Empty;
     [Required]
     public string? Photo { get; set; } = string.Empty;

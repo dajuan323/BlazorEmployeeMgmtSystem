@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using BaseLibrary.Entities;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace BaseLibrary.Entities;
+namespace BaseLibrary.DTO;
 
-public class Employee : BaseEntity
+public record EmployeeDTO
 {
     [Required]
     public string? CivilId { get; set; } = string.Empty;
@@ -21,7 +17,7 @@ public class Employee : BaseEntity
     public string? TelephoneNumber { get; set; } = string.Empty;
     [Required]
     public string? Photo { get; set; } = string.Empty;
-    public string? Other {  get; set; } = string.Empty;
+    public string? Other { get; set; } = string.Empty;
 
     public Branch? Branch { get; set; }
     [Required]

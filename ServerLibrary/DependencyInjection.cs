@@ -28,14 +28,21 @@ public static class DependencyInjection
         services.AddScoped<IUserAccount, UserAccountRepository>();
 
         services.AddScoped<IGenericRepositoryInterface<GeneralDepartment>, GeneralDepartmentRepository>();
+
         services.AddScoped<IGenericRepositoryInterface<Department>, DepartmentRepository>();
         services.AddScoped<IGenericRepositoryInterface<Branch>, BranchRepository>();
-
         services.AddScoped<IGenericRepositoryInterface<Country>, CountryRepository>();
         services.AddScoped<IGenericRepositoryInterface<City>, CityRepository>();
         services.AddScoped<IGenericRepositoryInterface<Town>, TownRepository>();
-
         services.AddScoped<IGenericRepositoryInterface<Employee>, EmployeeRepository>();
+        services.AddScoped<IGenericRepositoryInterface<Doctor>, DoctorRepository>();
+
+        services.AddScoped<IGenericRepositoryInterface<Overtime>, OvertimeRepository>();
+        services.AddScoped<IGenericRepositoryInterface<OvertimeType>, OvertimeTypeRepository>();
+        services.AddScoped<IGenericRepositoryInterface<Vacation>, VacationRepository>();
+        services.AddScoped<IGenericRepositoryInterface<VacationType>, VacationTypeRepository>();
+        services.AddScoped<IGenericRepositoryInterface<Sanction>, SanctionRepository>();
+        services.AddScoped<IGenericRepositoryInterface<SanctionType>, SanctionTypeRepository>();
 
         return services;
     }

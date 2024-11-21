@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ServerLibrary.Data;
 
@@ -11,9 +12,11 @@ using ServerLibrary.Data;
 namespace ServerLibrary.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241113203736_updateTable")]
+    partial class updateTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -225,6 +228,23 @@ namespace ServerLibrary.Migrations
                     b.ToTable("GeneralDepartments");
                 });
 
+            modelBuilder.Entity("BaseLibrary.Entities.OverTimeType", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("OverTimeTypes");
+                });
+
             modelBuilder.Entity("BaseLibrary.Entities.Overtime", b =>
                 {
                     b.Property<int>("Id")
@@ -250,23 +270,6 @@ namespace ServerLibrary.Migrations
                     b.HasIndex("OvertimeTypeId");
 
                     b.ToTable("Overtimes");
-                });
-
-            modelBuilder.Entity("BaseLibrary.Entities.OvertimeType", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("OvertimeTypes");
                 });
 
             modelBuilder.Entity("BaseLibrary.Entities.RefreshTokenInfo", b =>
@@ -491,13 +494,13 @@ namespace ServerLibrary.Migrations
 
             modelBuilder.Entity("BaseLibrary.Entities.Overtime", b =>
                 {
-                    b.HasOne("BaseLibrary.Entities.OvertimeType", "OvertimeType")
+                    b.HasOne("BaseLibrary.Entities.OverTimeType", "OverTimeType")
                         .WithMany("Overtimes")
                         .HasForeignKey("OvertimeTypeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("OvertimeType");
+                    b.Navigation("OverTimeType");
                 });
 
             modelBuilder.Entity("BaseLibrary.Entities.Sanction", b =>
@@ -558,7 +561,7 @@ namespace ServerLibrary.Migrations
                     b.Navigation("Departments");
                 });
 
-            modelBuilder.Entity("BaseLibrary.Entities.OvertimeType", b =>
+            modelBuilder.Entity("BaseLibrary.Entities.OverTimeType", b =>
                 {
                     b.Navigation("Overtimes");
                 });

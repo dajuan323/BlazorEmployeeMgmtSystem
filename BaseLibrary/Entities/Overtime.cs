@@ -17,7 +17,7 @@ public class Overtime : OtherBaseEntity
     public int NumberOfDays => (EndDate-StartDate).Days;
 
     // Many to one relationshipt with Vacation Type
-    public OverTimeType? OverTimeType { get; set; }
+    public OvertimeType? OvertimeType { get; set; }
 
     [Required]
     public int OvertimeTypeId { get; set; }

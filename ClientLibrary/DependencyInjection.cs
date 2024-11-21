@@ -27,6 +27,17 @@ public static class DependencyInjection
 
         services.AddScoped<IGenericServiceInterface<Employee>, GenericServiceImplementation<Employee>>();
 
+        services.AddScoped<IGenericServiceInterface<Doctor>, GenericServiceImplementation<Doctor>>();
+
+        services.AddScoped<IGenericServiceInterface<Overtime>, GenericServiceImplementation<Overtime>>();
+        services.AddScoped<IGenericServiceInterface<OvertimeType>, GenericServiceImplementation<OvertimeType>>();
+
+        services.AddScoped<IGenericServiceInterface<Sanction>, GenericServiceImplementation<Sanction>>();
+        services.AddScoped<IGenericServiceInterface<SanctionType>, GenericServiceImplementation<SanctionType>>();
+
+        services.AddScoped<IGenericServiceInterface<Vacation>, GenericServiceImplementation<Vacation>>();
+        services.AddScoped<IGenericServiceInterface<VacationType>, GenericServiceImplementation<VacationType>>();
+
         services.AddScoped<IUserAccountService, UserAccountService>();
 
 

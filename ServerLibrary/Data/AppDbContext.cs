@@ -34,7 +34,7 @@ public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(op
     public DbSet<Vacation> Vacations { get; set; }
     public DbSet<VacationType> VacationTypes { get; set; }
     public DbSet<Overtime> Overtimes { get; set; }
-    public DbSet<OverTimeType> OverTimeTypes { get; set; }
+    public DbSet<OvertimeType> OvertimeTypes { get; set; }
     public DbSet<Sanction> Sanctions { get; set; }
     public DbSet<SanctionType> SanctionTypes { get; set; }
     public DbSet<Doctor> Doctors { get; set; }

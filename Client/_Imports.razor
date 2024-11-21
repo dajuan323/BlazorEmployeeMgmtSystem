@@ -19,20 +19,25 @@
 
 @using Client.Pages.ContentPages.DepartmentPages
 @using Client.Pages.ContentPages.LocationPages
-@using Client.Pages.UserPages
+@using Client.Pages.ContentPages.UserPages
+@using Client.Pages.ContentPages.EmployeePages
 @using Client.Pages.OtherPages
-@using Client.Pages.OtherPages
-@using Client.Pages.EmployeePages
+@using Client.Pages.OtherPages.DoctorPages
+@using Client.Pages.OtherPages.OvertimePages
+@using Client.Pages.OtherPages.SanctionPages
+@using Client.Pages.OtherPages.VacationPages
+
 
 @using BaseLibrary.DTO
 @using ClientLibrary.Helpers
 @using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.AspNetCore.Authorization
 
 @using Syncfusion.Blazor.DropDowns
 @using Syncfusion.Blazor.Popups
 @using Syncfusion.Blazor.Grids
 @using Syncfusion.Blazor
-
+@using Syncfusion.Blazor.Navigations
 
 
 
@@ -61,3 +66,15 @@
 
 @* Employee *@
 @inject IGenericServiceInterface<Employee> employeeService
+
+@* Supplementary Tables *@
+@inject IGenericServiceInterface<Overtime> overtimeServices
+@inject IGenericServiceInterface<OvertimeType> overtimeTypeServices
+
+@inject IGenericServiceInterface<Vacation> vacationService
+@inject IGenericServiceInterface<VacationType> vacationTypeService
+
+@inject IGenericServiceInterface<Sanction> sanctionService
+@inject IGenericServiceInterface<SanctionType> sanctionTypeService
+
+@inject IGenericServiceInterface<Doctor> doctorService

@@ -1,5 +1,6 @@
 ﻿
 
+using BaseLibrary.DTO;
 using BaseLibrary.Entities;
 using BaseLibrary.Responses;
 using Microsoft.AspNetCore.Http.HttpResults;
@@ -25,12 +26,33 @@ public class EmployeeRepository(AppDbContext _appDbContext) : IGenericRepository
     {
         List<Employee>? employees = await _appDbContext.Employees
                 .AsNoTracking()
-                .Include(_=>_.Town)
-                .ThenInclude(_=>_.City)
-                .ThenInclude(_=>_.Country)
-                .Include(_=>_.Branch)
-                .ThenInclude(_=>_.Department)
-                .ThenInclude(_=>_.GeneralDepartment).ToListAsync();
+                .Include(_ => _.Town)
+                    .ThenInclude(_ => _.City)
+                        .ThenInclude(_ => _.Country)
+                .Include(_ => _.Branch)
+                    .ThenInclude(_ => _.Department)
+                        .ThenInclude(_ => _.GeneralDepartment)
+                //.Select(_ => new EmployeeDTO
+                //{
+                //    _.Id,
+                //    _.Name,
+                //    _.CivilId,
+                //    _.FileNumber,
+                //    _.JobName,
+                //    _.Address,
+                //    _.TelephoneNumber,
+                //    _.Photo,
+                //    _.Other,
+                //    BranchId = _.Branch.Id,
+                //    BranchName = _.Branch.Name,
+                //    DepartmentName = _.Branch.Department.Name,
+                //    GeneralDepartmentName = _.Branch.Department.GeneralDepartment.Name,
+                //    TownId = _.Town.Id,
+                //    Town = _.Town.Name,
+                //    City = _.Town.City.Name,
+                //    Country = _.Town.City.Country.Name
+                //})
+                .ToListAsync();
 
         return employees;
     }
@@ -44,6 +66,7 @@ public class EmployeeRepository(AppDbContext _appDbContext) : IGenericRepository
             .Include(_ => _.Branch)
             .ThenInclude(_ => _.Department)
             .ThenInclude(_ => _.GeneralDepartment).FirstOrDefaultAsync(_=> _.Id == id)!;
+
 
         return emp!;
     }
