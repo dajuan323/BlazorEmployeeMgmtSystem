@@ -65,4 +65,6 @@ jobs:
                 app-name: 'blzr-emp-mgmt-backend'
                 slot-name: 'Production'
                 package: .
+                appSettings: |
+                  -name ASPNETCORE_ENVIRONMENT -value "Staging"  # Set the environment variable in the pipeline
                 startup-command: 'dotnet Server.dll'
