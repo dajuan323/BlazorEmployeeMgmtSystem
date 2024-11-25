@@ -66,8 +66,7 @@ BenchmarkDotNet.Artifacts/
 project.lock.json
 project.fragment.lock.json
 artifacts/
-appsettings.Development.json
-appsettings.Staging.json
+
 appsettings.Production.json
 
 # ASP.NET Scaffolding
