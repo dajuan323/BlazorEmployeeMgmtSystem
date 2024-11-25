@@ -34,14 +34,7 @@ public static class DependencyInjection
                 options.UseSqlite(configuration.GetConnectionString("Default") ??
                     throw new InvalidOperationException("Database not found."));
         });
-        //var serviceProvider = services.BuildServiceProvider();
-        //var _context = serviceProvider.GetRequiredService<AppDbContext>();
 
-        //if (env.IsStaging())
-        //{
-        //    _context.Database.Migrate();
-        //    SeedData(_context);
-        //}
 
 
 
@@ -67,21 +60,5 @@ public static class DependencyInjection
         return services;
     }
 
-    //private static void SeedData(AppDbContext context)
-    //{
-    //    if (!context.ApplicationUsers.Any())
-    //    {
-    //        context.ApplicationUsers.AddRange(
-    //            new ApplicationUser
-    //            {
-    //                Id = 1,
-    //                Fullname = "System Admin",
-    //                Email = "admin@system.com",
-    //                Password = "string"
-    //            }
-    //            );
 
-    //        context.SaveChanges();
-    //    }
-    //}
 }

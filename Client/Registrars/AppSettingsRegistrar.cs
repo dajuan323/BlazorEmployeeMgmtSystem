@@ -8,6 +8,7 @@ public class AppSettingsRegistrar : IWebAssemblyHostBuilderRegistrar
 {
     public void RegisterServices(WebAssemblyHostBuilder builder)
     {
+        builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("blazor-emp-mgmt-backend.azurewebsites.net") });
         builder.Configuration.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
         builder.Services.AddScoped<AllState>();
 
