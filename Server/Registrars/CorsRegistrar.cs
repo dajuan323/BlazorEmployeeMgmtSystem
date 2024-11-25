@@ -9,7 +9,7 @@ public class CorsRegistrar : IWebApplicationBuilderRegistrar
         {
             options.AddPolicy("AllowBlazorWasm",
                 builder => builder
-                .WithOrigins("http://localhost:5104", "https://localhost:7116", "https://blzr-emp-mgmt-backend.azurewebsites.net/")
+                .WithOrigins("http://localhost:5104", "https://localhost:7116", "https://blzr-emp-mgmt-backend.azurewebsites.net")
                 .AllowAnyMethod()
                 .AllowAnyHeader()
                 .AllowCredentials());
