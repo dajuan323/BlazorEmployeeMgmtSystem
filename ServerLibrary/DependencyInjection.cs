@@ -27,7 +27,7 @@ public static class DependencyInjection
         services.AddDbContext<AppDbContext>(options =>
         {
             if (env.IsDevelopment())
-                options.UseSqlServer(configuration.GetConnectionString("Default") ??
+                options.UseSqlite(configuration.GetConnectionString("Default") ??
                     throw new InvalidOperationException("Database not found."));
 
             if (env.IsStaging())
