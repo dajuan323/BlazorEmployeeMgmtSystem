@@ -55,15 +55,15 @@ jobs:
             - name: Login to Azure
               uses: azure/login@v2
               with:
-                client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_560481F74B9C496FA7F0234EB8CA4BDD }}
-                tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_07DDD3B60CA84722AF202AF38A68FDDC }}
-                subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_19F8E2E9728D49618A5F39EE408D9665 }}
+                client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_C0EBBF2A8BD946C89BFEBCABB5CD525B }}
+                tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_8F62BF3D75E645899CA597F801FBA514 }}
+                subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_9FD6D9AD22324BF3A85E156FB660788D }}
     
             - name: Deploy to Azure Web App
               id: deploy-to-webapp
               uses: azure/webapps-deploy@v3
               with:
-                app-name: 'blzr-emp-mgmt-backend'
+                app-name: 'blazor-emp-mgmt-backend'
                 slot-name: 'Production'
                 package: .
                 startup-command: 'dotnet Server.dll'
