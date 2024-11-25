@@ -63,6 +63,6 @@ jobs:
               uses: azure/webapps-deploy@v3
               with:
                 app-name: 'blzr-emp-mgmt-backend'
-                slot-name: 'Staging'
+                slot-name: 'Production'
                 package: .
                 startup-command: 'dotnet Server.dll'
