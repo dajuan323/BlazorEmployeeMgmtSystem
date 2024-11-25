@@ -10,7 +10,7 @@ namespace Server.Registrars
     {
         public void RegisterServices(WebApplicationBuilder builder)
         {
-            string jwtGitKey = Environment.GetEnvironmentVariable("JWT_SECRET_KEY")!;
+            //string jwtGitKey = Environment.GetEnvironmentVariable("JWT_SECRET_KEY")!;
             builder.Services.Configure<JwtSection>(builder.Configuration.GetSection("JwtSection"));
             var jwtSection = builder.Configuration.GetSection(nameof(JwtSection)).Get<JwtSection>();
 
@@ -28,7 +28,7 @@ namespace Server.Registrars
                     ValidateLifetime = true,
                     ValidIssuer = jwtSection!.Issuer,
                     ValidAudience = jwtSection.Audience,
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtGitKey!))
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSection.Key!))
                 };
             });
         }
