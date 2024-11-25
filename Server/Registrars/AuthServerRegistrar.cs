@@ -10,7 +10,7 @@ namespace Server.Registrars
     {
         public void RegisterServices(WebApplicationBuilder builder)
         {
-            string? jwtGitKey = Environment.GetEnvironmentVariable("JWT_SECRET_KEY");
+            string jwtGitKey = Environment.GetEnvironmentVariable("JWT_SECRET_KEY")!;
             builder.Services.Configure<JwtSection>(builder.Configuration.GetSection("JwtSection"));
             var jwtSection = builder.Configuration.GetSection(nameof(JwtSection)).Get<JwtSection>();
 
