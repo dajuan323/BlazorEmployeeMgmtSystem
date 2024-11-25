@@ -27,6 +27,8 @@ jobs:
          
         - name: Publish
           run: dotnet publish ./Server/Server.csproj --configuration Release --output ./publish
+            
+
          
         - name: Upload artifact for deployment job
           uses: actions/upload-artifact@v4
@@ -63,3 +65,4 @@ jobs:
                 app-name: 'blzr-emp-mgmt-backend'
                 slot-name: 'Production'
                 package: .
+                startup-command: 'dotnet Server.dll'
