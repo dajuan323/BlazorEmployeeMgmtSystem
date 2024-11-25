@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace ServerLibrary.Migrations
 {
     /// <inheritdoc />
-    public partial class First : Migration
+    public partial class InitSqlite : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -15,11 +15,11 @@ namespace ServerLibrary.Migrations
                 name: "ApplicationUsers",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Fullname = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Email = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Password = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Fullname = table.Column<string>(type: "TEXT", nullable: true),
+                    Email = table.Column<string>(type: "TEXT", nullable: true),
+                    Password = table.Column<string>(type: "TEXT", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -27,30 +27,28 @@ namespace ServerLibrary.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Country",
+                name: "Countries",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Name = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Country", x => x.Id);
+                    table.PrimaryKey("PK_Countries", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
                 name: "Doctors",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Date = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Diagnosis = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    MedicalRecommendation = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    CivilId = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    FileNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Other = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Date = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    Diagnosis = table.Column<string>(type: "TEXT", nullable: false),
+                    MedicalRecommendation = table.Column<string>(type: "TEXT", nullable: false),
+                    EmployeeId = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -61,9 +59,9 @@ namespace ServerLibrary.Migrations
                 name: "GeneralDepartments",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Name = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -71,26 +69,26 @@ namespace ServerLibrary.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "OverTimeTypes",
+                name: "OvertimeTypes",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Name = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_OverTimeTypes", x => x.Id);
+                    table.PrimaryKey("PK_OvertimeTypes", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
                 name: "RefreshTokenInfos",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Token = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    UserId = table.Column<int>(type: "int", nullable: false)
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Token = table.Column<string>(type: "TEXT", nullable: true),
+                    UserId = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -101,9 +99,9 @@ namespace ServerLibrary.Migrations
                 name: "SanctionTypes",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Name = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -114,9 +112,9 @@ namespace ServerLibrary.Migrations
                 name: "SystemRoles",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Name = table.Column<string>(type: "TEXT", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -127,10 +125,10 @@ namespace ServerLibrary.Migrations
                 name: "UserRoles",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    RoleId = table.Column<int>(type: "int", nullable: false),
-                    UserId = table.Column<int>(type: "int", nullable: false)
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    RoleId = table.Column<int>(type: "INTEGER", nullable: false),
+                    UserId = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -141,9 +139,9 @@ namespace ServerLibrary.Migrations
                 name: "VacationTypes",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Name = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -151,21 +149,21 @@ namespace ServerLibrary.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "City",
+                name: "Cities",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    CountryId = table.Column<int>(type: "int", nullable: false),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    CountryId = table.Column<int>(type: "INTEGER", nullable: false),
+                    Name = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_City", x => x.Id);
+                    table.PrimaryKey("PK_Cities", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_City_Country_CountryId",
+                        name: "FK_Cities_Countries_CountryId",
                         column: x => x.CountryId,
-                        principalTable: "Country",
+                        principalTable: "Countries",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -174,10 +172,10 @@ namespace ServerLibrary.Migrations
                 name: "Departments",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    GeneralDepartmentId = table.Column<int>(type: "int", nullable: false),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    GeneralDepartmentId = table.Column<int>(type: "INTEGER", nullable: false),
+                    Name = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -194,22 +192,20 @@ namespace ServerLibrary.Migrations
                 name: "Overtimes",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    StartDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    EndDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    OvertimeTypeId = table.Column<int>(type: "int", nullable: false),
-                    CivilId = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    FileNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Other = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    StartDate = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    EndDate = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    OvertimeTypeId = table.Column<int>(type: "INTEGER", nullable: false),
+                    EmployeeId = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Overtimes", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Overtimes_OverTimeTypes_OvertimeTypeId",
+                        name: "FK_Overtimes_OvertimeTypes_OvertimeTypeId",
                         column: x => x.OvertimeTypeId,
-                        principalTable: "OverTimeTypes",
+                        principalTable: "OvertimeTypes",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -218,15 +214,13 @@ namespace ServerLibrary.Migrations
                 name: "Sanctions",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Date = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    CorrectiveAction = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    CorrectiveActionDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    SanctionTypeId = table.Column<int>(type: "int", nullable: false),
-                    CivilId = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    FileNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Other = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Date = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    CorrectiveAction = table.Column<string>(type: "TEXT", nullable: false),
+                    CorrectiveActionDate = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    SanctionTypeId = table.Column<int>(type: "INTEGER", nullable: false),
+                    EmployeeId = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -243,14 +237,12 @@ namespace ServerLibrary.Migrations
                 name: "Vacations",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    StartDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    NumberOfDays = table.Column<int>(type: "int", nullable: false),
-                    VacationTypeId = table.Column<int>(type: "int", nullable: false),
-                    CivilId = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    FileNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Other = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    StartDate = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    NumberOfDays = table.Column<int>(type: "INTEGER", nullable: false),
+                    VacationTypeId = table.Column<int>(type: "INTEGER", nullable: false),
+                    EmployeeId = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -267,18 +259,18 @@ namespace ServerLibrary.Migrations
                 name: "Towns",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    CityId = table.Column<int>(type: "int", nullable: false),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    CityId = table.Column<int>(type: "INTEGER", nullable: false),
+                    Name = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Towns", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Towns_City_CityId",
+                        name: "FK_Towns_Cities_CityId",
                         column: x => x.CityId,
-                        principalTable: "City",
+                        principalTable: "Cities",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -287,10 +279,10 @@ namespace ServerLibrary.Migrations
                 name: "Branches",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    DepartmentId = table.Column<int>(type: "int", nullable: false),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    DepartmentId = table.Column<int>(type: "INTEGER", nullable: false),
+                    Name = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -307,19 +299,18 @@ namespace ServerLibrary.Migrations
                 name: "Employees",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    CivilId = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    FileNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    FullName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    JobName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Address = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    TelephoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Photo = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Other = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    BranchId = table.Column<int>(type: "int", nullable: false),
-                    TownId = table.Column<int>(type: "int", nullable: false),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    CivilId = table.Column<string>(type: "TEXT", nullable: false),
+                    FileNumber = table.Column<string>(type: "TEXT", nullable: false),
+                    JobName = table.Column<string>(type: "TEXT", nullable: false),
+                    Address = table.Column<string>(type: "TEXT", nullable: false),
+                    TelephoneNumber = table.Column<string>(type: "TEXT", nullable: false),
+                    Photo = table.Column<string>(type: "TEXT", nullable: false),
+                    Other = table.Column<string>(type: "TEXT", nullable: true),
+                    BranchId = table.Column<int>(type: "INTEGER", nullable: false),
+                    TownId = table.Column<int>(type: "INTEGER", nullable: false),
+                    Name = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -344,8 +335,8 @@ namespace ServerLibrary.Migrations
                 column: "DepartmentId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_City_CountryId",
-                table: "City",
+                name: "IX_Cities_CountryId",
+                table: "Cities",
                 column: "CountryId");
 
             migrationBuilder.CreateIndex(
@@ -421,7 +412,7 @@ namespace ServerLibrary.Migrations
                 name: "Towns");
 
             migrationBuilder.DropTable(
-                name: "OverTimeTypes");
+                name: "OvertimeTypes");
 
             migrationBuilder.DropTable(
                 name: "SanctionTypes");
@@ -433,13 +424,13 @@ namespace ServerLibrary.Migrations
                 name: "Departments");
 
             migrationBuilder.DropTable(
-                name: "City");
+                name: "Cities");
 
             migrationBuilder.DropTable(
                 name: "GeneralDepartments");
 
             migrationBuilder.DropTable(
-                name: "Country");
+                name: "Countries");
         }
     }
 }

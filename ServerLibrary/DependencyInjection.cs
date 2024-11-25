@@ -1,7 +1,10 @@
 ﻿using BaseLibrary.Entities;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.IdentityModel.Tokens;
 using ServerLibrary.Data;
 using ServerLibrary.Repositories.Contracts;
 using ServerLibrary.Repositories.Implementations;
@@ -15,15 +18,24 @@ namespace ServerLibrary;
 
 public static class DependencyInjection
 {
-    public static IServiceCollection AddServerLibrary(this IServiceCollection services, IConfiguration configuration)
+    public static IServiceCollection AddServerLibrary(this IServiceCollection services, IConfiguration configuration, IHostEnvironment env)
     {
         var assembly = typeof(DependencyInjection).Assembly;
 
+        
+
         services.AddDbContext<AppDbContext>(options =>
         {
-            options.UseSqlServer(configuration.GetConnectionString("Default") ??
-                throw new InvalidOperationException("Database not found."));
+            if (env.IsDevelopment())
+                options.UseSqlServer(configuration.GetConnectionString("Default") ??
+                    throw new InvalidOperationException("Database not found."));
+
+            if (env.IsStaging())
+                options.UseSqlite(configuration.GetConnectionString("Default") ??
+                    throw new InvalidOperationException("Database not found."));
         });
+
+
 
         services.AddScoped<IUserAccount, UserAccountRepository>();
 
@@ -46,4 +58,5 @@ public static class DependencyInjection
 
         return services;
     }
+
 }

@@ -10,7 +10,7 @@ public class ServerLibraryRegistrar : IWebApplicationBuilderRegistrar
     {
         builder.Host.ConfigureServices((hostContext, services) =>
         {
-            services.AddServerLibrary(hostContext.Configuration);
+            services.AddServerLibrary(hostContext.Configuration, hostContext.HostingEnvironment);
         });
     }
 }
