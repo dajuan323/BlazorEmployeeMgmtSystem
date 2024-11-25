@@ -27,6 +27,13 @@ jobs:
          
         - name: Publish
           run: dotnet publish ./Server/Server.csproj --configuration Release --output ./publish
+
+        - name: List contents of publish folder
+          run: |
+            echo "Listing contents of the publish folder:"
+            ls -l ./publish  # For Linux agents, use ls
+            
+
          
         - name: Upload artifact for deployment job
           uses: actions/upload-artifact@v4
