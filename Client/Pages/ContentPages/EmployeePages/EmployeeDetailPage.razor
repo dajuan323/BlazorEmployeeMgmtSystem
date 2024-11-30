@@ -37,15 +37,15 @@
                                     </tr>
                                     <tr>
                                         <td><h6 class="fw-bold">General Department:</h6></td>
-                                        <td>@EmployeeDetails.Branch.Department.Name</td>
+                                        <td>@EmployeeDetails.GeneralDepartment</td>
                                     </tr>
                                     <tr>
                                         <td><h6 class="fw-bold">Department:</h6></td>
-                                        <td>@EmployeeDetails.Branch.Department.Name</td>
+                                        <td>@EmployeeDetails.Department</td>
                                     </tr>
                                     <tr>
                                         <td><h6 class="fw-bold">Branch:</h6></td>
-                                        <td>@EmployeeDetails.Branch.Name</td>
+                                        <td>@EmployeeDetails.Branch</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -53,15 +53,15 @@
                                 <tbody>
                                     <tr>
                                         <td><h6 class="fw-bold">Country:</h6></td>
-                                        <td>@EmployeeDetails.Town.City.Country.Name</td>
+                                        <td>@EmployeeDetails.Country</td>
                                     </tr>
                                     <tr>
                                         <td><h6 class="fw-bold">City:</h6></td>
-                                        <td>@EmployeeDetails.Town.City.Name</td>
+                                        <td>@EmployeeDetails.City</td>
                                     </tr>
                                     <tr>
                                         <td><h6 class="fw-bold">Town:</h6></td>
-                                        <td>@EmployeeDetails.Town.Name</td>
+                                        <td>@EmployeeDetails.Town</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -78,7 +78,7 @@
 
 @code {
     [Parameter] public bool ShowDetailsPage { get; set; }
-    [Parameter] public Employee EmployeeDetails { get; set; } = new();
+    [Parameter] public EmployeeDtoOut? EmployeeDetails { get; set; } 
     [Parameter] public EventCallback HandleDetailsPageCloseBtnClicked { get; set; } = new();
 
     async Task DetailsPageCloseBtnClicked() => await HandleDetailsPageCloseBtnClicked.InvokeAsync();

@@ -2,7 +2,7 @@
 <SfDialog Width="200px" IsModal="true" ShowCloseIcon="true" @bind-Visible="IsVisible">
     <DialogEvents OnOpen="OpenDialog"> </DialogEvents>
     <DialogTemplates>
-        <Header>@Title Department</Header>
+        <Header>@Title Branch</Header>
         <Content>
             <EditForm Model="Branch" Enhance OnSubmit="Save">
                 <div class="card border-success">
@@ -19,7 +19,7 @@
                             <label class="form-label">Select Department</label>
 
 
-                            @if (Branch.Department is not null)
+                            @if (Branch.Department != null)
                             {
                                 string selected = Branch.Department!.Name;
                                 <SfDropDownList TValue="string" TItem="Department" Placeholder="@selected" DataSource="Departments">

@@ -1,4 +1,5 @@
-﻿@implements IDisposable
+﻿@using BaseLibrary.DTO.Conversions
+@implements IDisposable
 
 @if (allState.ShowEmployee)
 {
@@ -20,23 +21,23 @@
                             <SfGrid DataSource="@Employees" AllowPaging="true" AllowSorting="true"
                                 Toolbar=@Tool AllowExcelExport="true" AllowPdfExport="true" @ref="DefaultGrid">
                                 <GridColumns>
-                                    <GridColumn HeaderText="Employee Image">
+                                    <GridColumn HeaderText="Image">
                                         <Template>
                                             @{
-                                                var employee = (context as Employee);
+                                                var employee = (context as EmployeeDtoOut);
                                                 <div class="image">
                                                     <i src="@employee!.Photo" alt="@employee.Name" width="150" height="150" />
                                                 </div>
                                             }
                                         </Template>
                                     </GridColumn>
-                                    <GridColumn Field="@nameof(Employee.CivilId)" HeaderText="Civil ID"></GridColumn>
-                                    <GridColumn Field="@nameof(Employee.FileNumber)" HeaderText="File Number"></GridColumn>
-                                    <GridColumn Field="@nameof(Employee.Name)" HeaderText="Name"></GridColumn>
-                                    <GridColumn Field="@nameof(Employee.TelephoneNumber)" HeaderText="Telephone"></GridColumn>
-                                    <GridColumn Field="@nameof(Employee.JobName)" HeaderText="Job Name"></GridColumn>
-                                    <GridColumn Field="@nameof(Employee.Branch.Name)" HeaderText="Branch"></GridColumn>
-                                    <GridColumn Field="@nameof(Employee.Town.Name)" HeaderText="Town"></GridColumn> 
+                                    <GridColumn Field="@nameof(EmployeeDto.CivilId)" HeaderText="Civil ID"></GridColumn>
+                                    <GridColumn Field="@nameof(EmployeeDto.FileNumber)" HeaderText="File Number"></GridColumn>
+                                    <GridColumn Field="@nameof(EmployeeDto.Name)" HeaderText="Name"></GridColumn>
+                                    <GridColumn Field="@nameof(EmployeeDto.TelephoneNumber)" HeaderText="Telephone"></GridColumn>
+                                    <GridColumn Field="@nameof(EmployeeDto.JobName)" HeaderText="Job Name"></GridColumn>
+                                    <GridColumn Field="@nameof(EmployeeDto.Branch)" HeaderText="Branch"></GridColumn>
+                                    <GridColumn Field="@nameof(EmployeeDto.Town)" HeaderText="Town"></GridColumn> 
                                     <GridColumn HeaderText="Menu" HeaderTextAlign="TextAlign.Left">
                                         <Template>
                                             @{
@@ -60,6 +61,7 @@
 
 <AddEditEmployeePage @ref="addEditEmployee"
                      Employee="Employee"
+                     
                      ShowAddEditEmployee="ShowAddEditPage"
                      NotifyParentFormCloseClicked="NotifyParentFormCloseClicked"
                      Countries="DefaultCountries"
@@ -75,7 +77,7 @@
                      HandleSaveEmployeeClickedEvent="HandleSaveEmployeeClickedEvent">
 </AddEditEmployeePage>
 
-<EmployeeDetailPage EmployeeDetails="Employee"
+<EmployeeDetailPage EmployeeDetails="EmployeeDto"
                     ShowDetailsPage="ShowDetailsPage"
                     HandleDetailsPageCloseBtnClicked="HandleDetailsPageCloseBtnClicked" />
 
@@ -99,8 +101,9 @@
 
 @code {
     AddEditEmployeePage? addEditEmployee;
-    private SfGrid<Employee>? DefaultGrid;
-    public List<Employee> Employees { get; set; } = [];
+    private SfGrid<EmployeeDtoOut>? DefaultGrid;
+    public List<EmployeeDtoOut> Employees { get; set; } = [];
+    public EmployeeDtoOut EmployeeDto { get; set; }
     public Employee Employee { get; set; } = new();
 
     // Country / City / Town
@@ -160,7 +163,12 @@
         SelectedEmployee = new();
     }
 
-    private async Task LoadEmployees() => Employees = await employeeService.GetAll(Constants.EmployeeBaseUrl);
+    private async Task LoadEmployees()
+    {
+        var employees = await employeeService.GetAll(Constants.EmployeeBaseUrl);
+        Employees = employees.Select(_ => EmployeeConversion.ToEntityDTO(_)).ToList();
+        
+    } 
 
     // Save Employee
     async Task HandleSaveEmployeeClickedEvent(Employee employee)
@@ -215,14 +223,14 @@
         addEditEmployee!.EmployeeGroup2.Other = SelectedEmployee.Other;
 
         //General Department / Department / Branch
-        addEditEmployee!.GeneralDepartment = SelectedEmployee.Branch!.Department!.GeneralDepartment!.Name;
-        addEditEmployee!.Department = SelectedEmployee.Branch!.Department!.Name;
-        addEditEmployee!.Branch = SelectedEmployee.Branch!.Name;
+        addEditEmployee!.GeneralDepartment = SelectedEmployee.Branch.Department.GeneralDepartment.Name!;
+        addEditEmployee!.Department = SelectedEmployee.Branch.Department.Name!;
+        addEditEmployee!.Branch = SelectedEmployee.Branch.Name!;
 
         // Country / City / Town
-        addEditEmployee!.Country = SelectedEmployee.Town!.City!.Country!.Name;
-        addEditEmployee!.City = SelectedEmployee.Town!.City!.Name;
-        addEditEmployee!.Town = SelectedEmployee.Town!.Name;
+        addEditEmployee!.Country = SelectedEmployee.Town.City.Country.Name!;
+        addEditEmployee!.City = SelectedEmployee.Town.City.Name!;
+        addEditEmployee!.Town = SelectedEmployee.Town.Name!;
 
         //Title
         addEditEmployee.Title = "Update";

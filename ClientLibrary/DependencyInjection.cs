@@ -47,10 +47,10 @@ public static class DependencyInjection
         services.AddScoped<LocalStorageService>();
 
 
-        services.AddHttpClient("SystemApiClient", client =>
-        {
-            client.BaseAddress = new Uri("https://localhost:7164");
-        }).AddHttpMessageHandler<CustomHttpHandler>();
+        //services.AddHttpClient("SystemApiClient", client =>
+        //{
+        //    client.BaseAddress = new Uri("https://localhost:7164");
+        //}).AddHttpMessageHandler<CustomHttpHandler>();
 
 
 
