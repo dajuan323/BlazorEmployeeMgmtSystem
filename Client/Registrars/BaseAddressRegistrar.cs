@@ -16,6 +16,8 @@ public class BaseAddressRegistrar : IWebAssemblyHostBuilderRegistrar
                 client.BaseAddress = new Uri("https://localhost:7164");
             else if (env.IsStaging())
                 client.BaseAddress = new Uri("https://blazor-emp-mgmt-backend.azurewebsites.net/");
+            else
+                client.BaseAddress = new Uri("https://blazor-emp-mgmt-backend.azurewebsites.net/");
         }).AddHttpMessageHandler<CustomHttpHandler>();
         
 
